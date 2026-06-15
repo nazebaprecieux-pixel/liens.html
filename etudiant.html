@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Mon  Portfolio</title>
+        <meta charset="utf-8">
+         <meta name="viewport"cotent="width=device-width,initial-scale 1.0">
+         <style>
+        *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#e0e7ff,#f5f7ff);
+    color:#333;
+    line-height:1.6;
+}
+
+/* NAVBAR */
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 30px;
+    background:#1e293b;
+    border-radius:15px;
+    margin:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.2);
+}
+
+.logo{
+    color:white;
+    font-size:1.5rem;
+}
+
+nav ul{
+    display:flex;
+    gap:20px;
+    list-style:none;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#60a5fa;
+}
+
+/* SECTION ACCUEIL */
+
+.hero{
+    text-align:center;
+    padding:50px 20px;
+}
+
+.hero img{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid white;
+    box-shadow:0 5px 20px rgba(0,0,0,0.25);
+}
+
+.hero h3{
+    margin-top:20px;
+    font-size:1.5rem;
+    color:#1e3a8a;
+}
+
+.hero h1{
+    font-size:2.5rem;
+    color:#0f172a;
+    margin:10px 0;
+}
+
+.hero p{
+    color:#475569;
+    font-size:1.1rem;
+    margin-bottom:20px;
+}
+
+/* BOUTONS */
+
+.btn{
+    display:inline-block;
+    padding:12px 25px;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    transition:0.3s;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#1d4ed8;
+    transform:translateY(-3px);
+}
+
+/* SECTIONS */
+
+section{
+    padding:50px 20px;
+}
+
+section h2{
+    text-align:center;
+    margin-bottom:25px;
+    color:#1e293b;
+    font-size:2rem;
+}
+
+/* A PROPOS */
+
+.about{
+    background:white;
+    margin:20px;
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+}
+
+.about ul{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:15px;
+    list-style:none;
+    margin-top:20px;
+}
+
+.about ul li{
+    background:#dbeafe;
+    padding:12px;
+    border-radius:10px;
+    text-align:center;
+}
+
+/* COMPÉTENCES */
+
+.skill{
+    margin:20px auto;
+    max-width:600px;
+}
+
+.skill p{
+    margin-bottom:5px;
+    font-weight:bold;
+}
+
+.bar{
+    background:#cbd5e1;
+    height:12px;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+
+.bar span{
+    display:block;
+    height:100%;
+    background:linear-gradient(90deg,#2563eb,#60a5fa);
+    border-radius:10px;
+}
+
+/* PROJETS */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card a{
+    text-decoration:none;
+    color:#2563eb;
+    font-weight:bold;
+}
+
+/* CONTACT */
+
+form{
+    max-width:500px;
+    margin:auto;
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+}  input,
+textarea{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:1px solid #cbd5e1;
+    border-radius:10px;
+    outline:none;
+}
+
+textarea{
+    height:120px;
+    resize:none;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    background:#2563eb;
+    color:white;
+    font-size:1rem;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#1d4ed8;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#1e293b;
+    color:white;
+    margin-top:30px;
+    border-radius: 10px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero h1{
+        font-size:2rem;
+    }
+
+    .hero img{
+        width:180px;
+        height:180px;
+    }
+}  
+
+            
+         </style>
+         
+    </head>
+    <body>
+        <!--NAVBAR-->
+        <header>
+            <nav class="navbar">
+                <h3 class="logo">N.P Dev</h3>
+                    <ul class="nav-links">
+                        <li><a href="#home">Accueil</a></li>
+                        <li><a href="#about">A PROPOS</a></li>
+                        <li><a href="#skils">Capacités</a></li>
+                        <li><a href="#projets">Projets</a></li>
+                        <li><a href="#contact">tél</a></li>
+                    </ul>
+            </nav>
+        </header>
+  <section id="home"class="hero">
+     <img src="IMG_20260610_210402_389.png"class="profile">
+          <h3>Précieux NAZEBA</h3>
+            <h1>  Développeur Web</h1>
+             
+            <p>Je crée des sites web modernnes</p>
+             
+        
+        </section>
+
+        
+
+            <a href="C:\Users\prcieux\Documents\PROD.html#projet1."class="btn">Voir mes projets</a>
+        </section>
+        <!--A PROPOS-->
+        <section id="about"class="about">
+            <h2>A propos</h2>
+            <p>Je suis un passionné de développement web</p>
+            <ul>
+                <li>Âge:17ans</li>
+                <li>Ville:Porto-Novo</li>
+                <li>Email:nazebaprécieux@gmail.com</li>
+                <li>Profession:Etudiant</li>
+            </ul>
+
+        </section>
+      <!-- COMPETENCES -->
+<section id="skills" class="skills">
+    <h2>Compétences</h2>
+
+    <div class="skill">
+        <p>HTML</p>
+        <div class="bar">
+            <span style="width:90%"></span>
+        </div>
+    </div>
+
+    <div class="skill">
+        <p>CSS</p>
+        <div class="bar">
+            <span style="width:80%"></span>
+        </div>
+    </div>
+
+    <div class="skill">
+        <p>JavaScript</p>
+        <div class="bar">
+            <span style="width:60%"></span>
+        </div>
+    </div>
+
+    <div class="skill">
+        <p>PHP</p>
+        <div class="bar">
+            <span style="width:50%"></span>
+        </div>
+    </div>
+</section>
+              <!--PROJETS-->
+       <section id="projets"class="projets">
+            <h2>Mes projets</h2>
+            <div class="cards">
+                <!--6CARTES-->
+     <div class="cards">
+
+        <div class="card">
+            <h3>Calculatrice Web</h3>
+            <p>Une calculatrice réalisée avec HTML, CSS et JavaScript.</p>
+            <a href="calculatrice.html">Voir le projet</a>
+        </div>
+
+        <div class="card">
+            <h3>Portfolio Personnel</h3>
+            <p>Mon site portfolio responsive.</p>
+            <a href="portfolli.html">Voir le projet</a>
+        </div>
+
+        <div class="card">
+            <h3>Site Pâtisserie</h3>
+            <p>Site vitrine pour une 🍩🍪Pâtisserie.</p>
+            <a href="Pâtisserie.html">Voir le projet</a>
+        </div>
+
+        <div class="card">
+            <h3>Gestion Étudiants</h3>
+            <p>Application de gestion des étudiants en PHP.</p>
+            <a href="étudiant.htmlù">Voir le projet</a>
+        </div>
+
+    </div>
+</section>
+        </section>
+        <!--CONTACT-->
+        <section id="Contact"class="Contact">
+            <h2>Contact</h2>
+            <form>
+                <input type="text"type="text" placeholder="+229 01 ..   .."  ><br><br>
+                <input type="email"placeholder="nazebaprécieux@gmail.com"><br><br>
+                <textarea placeholder="Laissez un message"></textarea>
+
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+        <!--Footer-->
+        <footer>
+        <p><em>©2026 PrécieuxNAZEBA-Tous droits réservés</em></p>
+        </footer>
+</html>v
